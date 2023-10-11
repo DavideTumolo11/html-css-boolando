@@ -20,15 +20,16 @@
     --bool-danger: rgba( 252, 32, 32, 1);
 }
 
+
+
+img {
+    max-width: 100%;
+}
+
 header {
     background-color: var(--bool-primary);
     color: var(--bool-white);
     padding: 1rem 0;
-}
-
-
-main {
-    height: 60px;
 }
 
 footer {
@@ -85,4 +86,101 @@ ul.left-menù, .right-menù {
 
 .logo {
     flex-grow: 2;
+}
+
+.card {
+    box-shadow: 0 0 5px grey ;
+}
+
+/* main */
+
+.card .images .like {
+    top: 30px;
+    right: 9px;
+    padding: 8px;
+    position: absolute;
+    background-color: var(--bool-white);
+}
+
+.like:hover {
+    color: var(--bool-danger);
+}
+
+.card  .images {
+    position: relative;
+
+}
+
+.card .images img {
+    display: block;
+}
+
+.card > .images > .bottom {
+    display: none;
+}
+
+.card:hover .top {
+    display: none;
+}
+
+.card:hover .bottom {
+    display: block;
+}
+
+.card-body {
+    padding: 0.5rem;
+}
+.card-body > strong {
+    color: grey;
+}
+
+.card-body > h4 {
+    text-transform: uppercase;
+}
+
+.card .badges {
+    position: absolute;
+    bottom: 1rem;
+    left: 0rem;
+    display: flex;
+    gap: 2px;
+    font-size: 14px;
+    color: var(--bool-white);
+}
+
+.badges .discount {
+    background-color: var(--bool-danger);
+}
+
+.badges .category {
+    background-color: var(--bool-success);
+}
+
+.badges .discount,
+.badges .category {
+    padding: 2px 0.5rem;
+}
+
+.pricing {
+    display: flex;
+    gap: 2px;
+}
+.pricing .discount {
+    color: var(--bool-danger);
+}
+
+.pricing .full {
+    text-decoration: line-through;
+}
+
+/* footer */
+
+#site_footer {
+    background-color: var(--bool-dark);
+    color: var(--bool-white);
+    padding: 32px 0;
+}
+
+.social {
+    padding: 5px 0;
 }
