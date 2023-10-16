@@ -173,6 +173,10 @@ ul.left-menù, .right-menù {
     text-decoration: line-through;
 }
 
+.discouting {
+    color: var(--bool-danger);
+}
+
 /* footer */
 
 #site_footer {
